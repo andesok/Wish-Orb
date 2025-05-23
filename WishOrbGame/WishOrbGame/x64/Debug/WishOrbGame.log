@@ -1,2 +1,10 @@
-﻿  WishOrbGame.cpp
-  WishOrbGame.vcxproj -> D:\Projects_C++\WishOrbGame\x64\Debug\WishOrbGame.exe
+﻿  Entity.cpp
+  GameObject.cpp
+  Player.cpp
+  Puddle.cpp
+  Raider.cpp
+  ThrownPoison.cpp
+  ThrowTarget.cpp
+  WishOrbGame.cpp
+  Создание кода...
+  WishOrbGame.vcxproj -> D:\ИТМО\Проект\Wish Orb\Wish-Orb\WishOrbGame\x64\Debug\WishOrbGame.exe
