@@ -1,0 +1,4 @@
+#pragma once
+
+enum CharColors { BLACK, BLUE, GREEN, CYAN, RED, PURPLE, GOLD, DEFAULT, GREY, BLUISH, GREENISH, CYANISH, REDISH, PINK, YELLOW, WHITE };
+enum OrderLayers { BG, MAIN, PLAYER, UI };

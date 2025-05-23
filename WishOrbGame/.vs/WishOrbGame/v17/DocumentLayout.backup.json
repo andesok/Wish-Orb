@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\WishOrbGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|solutionrelative:WishOrbGame\\src\\WishOrbGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|solutionrelative:WishOrbGame\\src\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|solutionrelative:WishOrbGame\\src\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|solutionrelative:WishOrbGame\\src\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\Puddle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|solutionrelative:WishOrbGame\\src\\Puddle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\Raider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|solutionrelative:WishOrbGame\\src\\Raider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\ThrownPoison.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|solutionrelative:WishOrbGame\\src\\ThrownPoison.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\ThrowTarget.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E04F4738-DC9D-400F-A1E3-057ECFDBFC71}|WishOrbGame\\WishOrbGame.vcxproj|solutionrelative:WishOrbGame\\src\\ThrowTarget.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ThrownPoison.cpp",
+              "DocumentMoniker": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\ThrownPoison.cpp",
+              "RelativeDocumentMoniker": "WishOrbGame\\src\\ThrownPoison.cpp",
+              "ToolTip": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\ThrownPoison.cpp",
+              "RelativeToolTip": "WishOrbGame\\src\\ThrownPoison.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-23T22:08:46.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Raider.cpp",
+              "DocumentMoniker": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\Raider.cpp",
+              "RelativeDocumentMoniker": "WishOrbGame\\src\\Raider.cpp",
+              "ToolTip": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\Raider.cpp",
+              "RelativeToolTip": "WishOrbGame\\src\\Raider.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-23T22:08:42.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Puddle.cpp",
+              "DocumentMoniker": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\Puddle.cpp",
+              "RelativeDocumentMoniker": "WishOrbGame\\src\\Puddle.cpp",
+              "ToolTip": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\Puddle.cpp",
+              "RelativeToolTip": "WishOrbGame\\src\\Puddle.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-23T22:08:39.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\Player.cpp",
+              "RelativeDocumentMoniker": "WishOrbGame\\src\\Player.cpp",
+              "ToolTip": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\Player.cpp",
+              "RelativeToolTip": "WishOrbGame\\src\\Player.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-23T22:08:36.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameObject.cpp",
+              "DocumentMoniker": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\GameObject.cpp",
+              "RelativeDocumentMoniker": "WishOrbGame\\src\\GameObject.cpp",
+              "ToolTip": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\GameObject.cpp",
+              "RelativeToolTip": "WishOrbGame\\src\\GameObject.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-23T22:08:34.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WishOrbGame.cpp",
+              "DocumentMoniker": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\WishOrbGame.cpp",
+              "RelativeDocumentMoniker": "WishOrbGame\\src\\WishOrbGame.cpp",
+              "ToolTip": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\WishOrbGame.cpp",
+              "RelativeToolTip": "WishOrbGame\\src\\WishOrbGame.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-23T22:08:06.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ThrowTarget.cpp",
+              "DocumentMoniker": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\ThrowTarget.cpp",
+              "RelativeDocumentMoniker": "WishOrbGame\\src\\ThrowTarget.cpp",
+              "ToolTip": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\ThrowTarget.cpp",
+              "RelativeToolTip": "WishOrbGame\\src\\ThrowTarget.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-23T22:08:49.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Entity.cpp",
+              "DocumentMoniker": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\Entity.cpp",
+              "RelativeDocumentMoniker": "WishOrbGame\\src\\Entity.cpp",
+              "ToolTip": "D:\\Projects_C\u002B\u002B\\WishOrbGame\\WishOrbGame\\src\\Entity.cpp",
+              "RelativeToolTip": "WishOrbGame\\src\\Entity.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-23T22:08:26.429Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
