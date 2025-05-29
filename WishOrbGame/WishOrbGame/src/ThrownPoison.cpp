@@ -2,8 +2,10 @@
 #include "../include/Puddle.h"
 #include "../include/Player.h"
 #include "../include/Globals.h"
+#include <vector>
 
 extern int puddle_size;
+extern int puddle_lifetime;
 
 ThrownPoison::ThrownPoison(int _x, int _y, int _direction, int _endX, int _endY)
     : GameObject(_x, _y, '$', GOLD, OrderLayers::MAIN),
@@ -19,14 +21,7 @@ void ThrownPoison::Logic() {
         }
         if (x == endX && y == endY) {
             shattered = true;
-            symbol = '*';
-            color = RED;
             SpreadPuddle(x, y, puddle_size);
-        }
-    }
-    else {
-        lifetime--;
-        if (lifetime <= 0) {
             to_delete = true;
         }
     }
@@ -45,8 +40,8 @@ void ThrownPoison::SpreadPuddle(int centerX, int centerY, int radius) {
             int py = point.second;
 
             if (chars_grid[py][px] != '#') {
-                auto puddle = new Puddle(px, py, lifetime);
-                game_objects.push_back(puddle);
+                auto puddle = new Puddle(px, py, puddle_lifetime);
+                to_add.push_back(puddle);
 
                 int dx[] = { -1, 1, 0, 0 };
                 int dy[] = { 0, 0, -1, 1 };

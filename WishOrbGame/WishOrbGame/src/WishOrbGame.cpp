@@ -5,21 +5,27 @@
 #include <conio.h>
 #include <windows.h>
 
+#include "../include/Functions.h"
 #include "../include/GameObject.h"
 #include "../include/Player.h"
 #include "../include/Puddle.h"
 #include "../include/ThrownPoison.h"
 #include "../include/ThrowTarget.h"
-#include "../include/Raider.h"
+#include "../include/Enemy.h"
 #include "../include/Globals.h"
 
 using namespace std;
 
 int game_delay = 300;
-int damage = 1;
-int puddle_size=1;
-int throw_distance=5;
+int damage;
+int puddle_size;
+int puddle_lifetime;
+int throw_distance;
+int maxhp;
+int hp;
 
+vector<GameObject*> to_add;
+vector<GameObject*> to_remove;
 vector<GameObject*> game_objects;
 vector<vector<char>> chars_grid;
 vector<char> chars_row;
@@ -28,29 +34,58 @@ void SetColor(int color) {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
 void DeleteObject(GameObject* obj) {
-    delete obj;
+    if (!obj) return;  
     game_objects.erase(remove(game_objects.begin(), game_objects.end(), obj), game_objects.end());
+    delete obj;
 }
 void Setup() {
-    ifstream file("assets/levels/level0.txt");
-    if (file.is_open()) {
+    ifstream playerstats_file("assets/playerstats.txt");
+    if (playerstats_file.is_open()) {
         string line;
-        while (getline(file, line)) {
+        while (getline(playerstats_file, line)) {
+            auto string_vect = split(line, ':');
+            string name_var = string_vect[0];
+            int value_var = stoi(string_vect[1]);
+            if (name_var == "damage") {
+                damage = value_var;
+            }
+            else if (name_var == "puddle_size") {
+                puddle_size = value_var;
+            }
+            else if (name_var == "puddle_lifetime") {
+                puddle_lifetime = value_var;
+            }
+            else if (name_var == "throw_distance") {
+                throw_distance = value_var;
+            }
+            else if (name_var == "maxhp") {
+                maxhp = value_var;
+                hp = maxhp;
+            }
+        }
+        playerstats_file.close();
+    }
+
+    ifstream level_file("assets/levels/level0.txt");
+    if (level_file.is_open()) {
+        string line;
+        while (getline(level_file, line)) {
             chars_row.clear();
             for (char c : line) {
                 chars_row.push_back(c);
             }
             chars_grid.push_back(chars_row);
         }
-        file.close();
+        level_file.close();
     }
+
 }
 
 void Draw(Player& player) {
     system("cls");
     SetColor(WHITE);
     cout << "Objects: " << game_objects.size() << endl;
-    cout << "HP: " << player.hp << "/" << player.maxhp << endl;
+    cout << "HP: " << hp << "/" << maxhp << endl;
     cout << endl;
     int x_check = 0, y_check = 0;
     for (auto& chars_row : chars_grid) {
@@ -189,14 +224,17 @@ void PlayerMovement(Player& player) {
             targetX >= 0 && targetX < chars_grid[targetY].size() && !player.target_created) {
             player.target_created = true;
             player.target = new ThrowTarget(targetX, targetY);
-            game_objects.push_back(player.target);
+            to_add.push_back(player.target);
         }
-        player.target->x = targetX;
-        player.target->y = targetY;
 
-        if (player.poison_throw_fire) {
+        if (player.target) {
+            player.target->x = targetX;
+            player.target->y = targetY;
+        }
+
+        if (player.poison_throw_fire && player.target) {
             auto thrown_poison = new ThrownPoison(player.x, player.y, player.poison_throw_dir, player.target->x, player.target->y);
-            game_objects.push_back(thrown_poison);
+            to_add.push_back(thrown_poison);
             DeleteObject(player.target);
             player.target = nullptr;
             player.poison_throw = false;
@@ -206,27 +244,38 @@ void PlayerMovement(Player& player) {
     }
 }
 void WorldLogic() {
+
+    //Удаление объектов
+    for (auto obj : game_objects) {
+        if (obj->to_delete) to_remove.push_back(obj);;
+    }
+    if (!to_remove.empty()) {
+        for (auto obj : to_remove) {
+            DeleteObject(obj);
+        }
+        to_remove.clear();
+    }
+
+    //Добавление объектов
+    if (!to_add.empty()) {
+        game_objects.insert(game_objects.end(), to_add.begin(), to_add.end());
+        to_add.clear();
+    }
+
+    //Обработка объектов
     for (auto obj : game_objects) {
         obj->Logic();
     }
 
-    for (int i = 0; i < game_objects.size(); ) {
-        if (game_objects[i]->to_delete) {
-            DeleteObject(game_objects[i]);
-        }
-        else {
-            ++i;
-        }
-    }
 };
 
 int main()
 {
-    Player* player = new Player(5,5,100);
-    Raider* enemy = new Raider(15,5,5);
+    Setup();
+    Player* player = new Player(5,5);
+    Enemy* enemy = new Enemy(15,5,"megaslime");
     game_objects.push_back(player);
     game_objects.push_back(enemy);
-    Setup();
     while (true) {
         Input(*player);
         PlayerMovement(*player);

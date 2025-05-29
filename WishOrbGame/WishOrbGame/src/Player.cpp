@@ -1,11 +1,9 @@
 #include "../include/Player.h"
-#include "../include/ThrownPoison.h"
+#include "../include/Constants.h"
 
-Player::Player(int _x, int _y, int _hp)
-    : Entity(_x, _y, 'A', REDISH, OrderLayers::PLAYER, _hp){}
+using namespace std;
+
+Player::Player(int _x, int _y)
+    : GameObject(_x, _y, 'A', REDISH, OrderLayers::PLAYER){}
 
 void Player::Logic() {}
-
-void Player::Death() {
-    to_delete = true;
-}

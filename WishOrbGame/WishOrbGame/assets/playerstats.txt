@@ -1,0 +1,5 @@
+damage:1
+puddle_size:2
+puddle_lifetime:5
+throw_distance:5
+maxhp:150

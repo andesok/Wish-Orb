@@ -18,7 +18,6 @@ private:
     Puddle* puddle = nullptr;
     int direction;
     int endX, endY;
-    int lifetime = 5;
     bool shattered = false;
 
     void SpreadPuddle(int centerX, int centerY, int radius);

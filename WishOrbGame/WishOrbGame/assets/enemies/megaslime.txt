@@ -1,0 +1,5 @@
+name:Megaslime
+symbol:O
+color:4
+damage:2
+maxhp:20
